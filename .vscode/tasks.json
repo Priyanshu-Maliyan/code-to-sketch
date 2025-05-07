@@ -1,0 +1,40 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "watch",
+        "type": "npm",
+        "script": "watch",
+        "isBackground": true,
+        "problemMatcher": {
+          "owner": "typescript",
+          "fileLocation": ["relative", "${workspaceFolder}"],
+          "pattern": {
+            "regexp": "^([^\\s].*)\\((\\d+),(\\d+)\\):\\s+(error|warning|info)\\s+(TS\\d+)\\s*:\\s*(.*)$",
+            "file": 1,
+            "line": 2,
+            "column": 3,
+            "severity": 4,
+            "code": 5,
+            "message": 6
+          },
+          "background": {
+            "activeOnStart": true,
+            "beginsPattern": "^\\[webpack-cli\\] Compiler starting...",
+            "endsPattern": "^\\[webpack-cli\\] Compiler finished"
+          }
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      },
+      {
+        "label": "compile",
+        "type": "npm",
+        "script": "compile",
+        "problemMatcher": "$tsc",
+        "group": "build"
+      }
+    ]
+  }
