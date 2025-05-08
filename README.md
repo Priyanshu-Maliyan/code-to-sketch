@@ -8,7 +8,7 @@ A VS Code extension that converts selected code into interactive flowcharts.
 - Supports JavaScript and TypeScript (extensible to other languages).
 
 ## Installation
-1. Install from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=your-publisher-name.code-to-sketch).
+1. Install from the [VS Code Marketplace]([https://marketplace.visualstudio.com/items?itemName=your-publisher-name.code-to-sketch](https://marketplace.visualstudio.com/items?itemName=CodeToSketchDev-sketch.code-to-sketch&ssr=false#review-details)).
 2. Search for "Code to Sketch Converter" in the Extensions view.
 
 ## Usage
@@ -21,3 +21,4 @@ A VS Code extension that converts selected code into interactive flowcharts.
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/code-to-sketch.git
+
